@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.99">
+    <title>Collection Travel Fare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin-left:20px;
+            margin-right:5px;
+        }
+
+        .header-image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0.1cm;
+            font-size: larger;
+        }
+
+        .image-grid {
+            size: 10px;
+            display:grid;
+            grid-template-columns: 110px;
+        }
+
+        .image-grid img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+/*spacing for each column, and no wraping certain columns*/
+        th:nth-child(1), td:nth-child(1) {
+            width: 250px;
+            white-space: nowrap;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 95px;
+            white-space: nowrap;
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 95px;
+            white-space: nowrap;
+        }
+
+/*this is background colour for header*/
+        th:nth-child(1), th:nth-child(1) {
+            background-color: rgb(155, 190, 154);
+        }
+        th:nth-child(2), th:nth-child(2) {
+            background-color: rgb(155, 190, 154);
+        }
+        th:nth-child(3), th:nth-child(3) {
+            background-color: rgb(155, 190, 154);
+        }
+
+        
+        table {
+            border-collapse: collapse;
+        }
+
+        
+        .thead {
+            font-size: 15px;
+        }
+
+ /*freeze pane for header row*/
+        th {
+            position: sticky;
+            top:0;
+            font-size: 25px;
+            background-color: #ffffff;
+            text-align: center;
+            z-index: 1;
+        }
+      
+      
+        th, td {
+            width: 10px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid black
+        }
+
+        td {
+            font-size: 20px;
+        }
+
+        .header {
+            padding: 0.1px;
+            text-align: left;
+            margin-bottom: 1px;
+            margin-left: 22px;
+            margin-right: 1450px;
+            size: 10px;
+            display: grid;
+            grid-template-columns: 400px
+        }
+
+        th:first-child, td:first-child {
+            text-align: left;
+
+        }
+        
+        
+        .blank-row-head {
+            height: 15px;
+        }
+
+        
+
+        .blank-row {
+            height: 9px;
+        }
+
+        .blank-row-right {
+            border: #ffffff;
+        }
+
+        p {
+            padding: 1px;
+        }
+
+        .container {
+            max-width: 400px;
+            height: 250px;
+            border: collapse;
+            margin: 10 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            background-color: #f9f9f9;
+            margin-left: 65px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        label, input, button {
+            align-content: center;
+            text-align: center;
+            width: 70%;
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        input, button {
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+  
+
+       
+
+       
+
+    </style>
+</head>
+
+
+<body>
+    <div class="header-image-container">
+        <div class="image-grid">
+            <img src="Screenshot 2025-01-11 081801.png">
+        </div>
+        
+    
+        <div class="header">
+            <h1>COLLECTION TRAVEL FARE</h1>
+            <p>Updated: January 2025</p>
+        </div>
+    </div>
+
+        <table>
+        
+
+            <thead class="thead">
+                <tr>
+                    <th>DESTINATION</th>
+                    <th>KM</th>
+                    <th>FIXED RATE</th>
+                    <th class="blank-row-right"></th>
+                </tr>
+                <tr class="blank-row-head"></tr>
+                <tr>
+                    <td>Mukkam</td>
+                    <td>44</td>
+                    <td>₹ 130</td>
+                </tr>
+                <tr>
+                    <td>Calicut</td>
+                    <td>60</td>
+                    <td>₹ 180</td>   
+                </tr>
+                <tr>
+                    <td>Kottakkal</td>
+                    <td>60</td>
+                    <td>₹ 180</td>
+                </tr>
+                <tr>
+                    <td>Manjeri</td>
+                    <td>50</td>
+                    <td>₹ 150</td>
+                </tr>
+                <tr>
+                    <td>Omanoor</td>
+                    <td>10</td>
+                    <td>₹ 30</td>
+                </tr>
+                <tr>
+                    <td>Kondotty</td>
+                    <td>10</td>
+                    <td>₹ 30</td>
+                </tr>
+                <tr>
+                    <td>Edavannapara</td>
+                    <td>16</td>
+                    <td>₹ 50</td>
+                </tr>
+                <tr>
+                    <td>Pulikkal</td>
+                    <td>16</td>
+                    <td>₹ 50</td>
+                </tr>
+                <tr>
+                    <td>Kizhisseri</td>
+                    <td>12</td>
+                    <td>₹ 35</td>
+                </tr>
+        </table>
+
+        <br>
+
+        <div class="container">
+            <h2>Travel Charge Calculator</h2>
+            <form id="chargeForm">
+                <label for="km">Enter Distance in KM:</label>
+                <input type="number" id="km" name="km" required placeholder="Enter kilometers" min="0">
+                
+                <button type="submit">Calculate Charge</button>
+            </form>
+            
+            <div class="result" id="result"></div>
+        </div>
+    
+        <script>
+            const fixedRatePerKm = 3; // Set your fixed rate per kilometer here
+    
+            document.getElementById("chargeForm").addEventListener("submit", function(event) {
+                event.preventDefault();  // Prevent form submission and page reload
+    
+                const km = parseFloat(document.getElementById("km").value);
+                
+                if (isNaN(km) || km < 0) {
+                    document.getElementById("result").innerHTML = "Please enter a valid distance.";
+                    return;
+                }
+    
+                const totalCharge = km * fixedRatePerKm;
+                document.getElementById("result").innerHTML = "Total Travel Charge: ₹" + totalCharge.toFixed(2);
+            });
+        </script>
+    
+                       <!-- Add more rows here as needed -->
+     
+
+</body>
+</html>
